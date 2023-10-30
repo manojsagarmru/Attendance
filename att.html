@@ -74,12 +74,13 @@
 </div>
 <script>
     function calculate_attendance() { 
-        
+        // window.alert("Test");
         var inputElements = document.getElementsByClassName('messageCheckbox');
         var Mobileno = document.getElementById("mob_number").value;
         var date = document.getElementById("date").value;
         var session = document.getElementById("session").value;
-      
+        // window.alert(Mobileno + date + session);
+        // console.log(inputElements[3]);
         checkedValue ="";
         count = 0;
     for(var i=0; inputElements[i]; ++i){
@@ -93,6 +94,7 @@
     checkedValue = checkedValue.slice(0,-1)
     window.location.replace("https://api.whatsapp.com/send?phone=+91"+Mobileno+"&text=Date: "+date+"%0aSession: "+session+"%0aAbsentees No: "+checkedValue+"%0aAbsent: "+count+"%0aPresent: "+present+"%0aTotal: "+present+"/89")
 
-  };
+    // window.alert("https://api.whatsapp.com/send?phone=+91"+Mobileno+"&text=Date:"+date+"\nSession:"+session+"\nAbsentees No: "+checkedValue+"\nAbsent:"+count+"\nPresent:"+present+"\nTotal:"+present+"/89");
+};
 
 </script>
