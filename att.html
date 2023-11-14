@@ -17,9 +17,28 @@
 }
 select {
     width: 100%;
+    height: 34px;
+    font-size: larger;
 }
+input#date {
+    width: 50%;
+    height: 34px;
+    font-size: larger;
+}
+
 tr.odd.gradeX {
     height: 50px;
+}
+input.messageCheckbox {
+    width: 25px;
+    height: 25px;
+}
+input#f_btn1 {
+    width: 50%;
+    height: 50px;
+}
+th {
+    padding: 20px;
 }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -506,7 +525,7 @@ tr.odd.gradeX {
 </html>
 <script>
     function calculate_attendance() { 
-        window.alert("Test");
+       
         var inputElements = document.getElementsByClassName('messageCheckbox');
         var Mobileno = document.getElementById("mob_number").value;
         var date = document.getElementById("date").value;
