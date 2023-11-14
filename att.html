@@ -6,16 +6,20 @@
     td {
       text-align: center;
       max-width: 100%;
+      font-size: larger;
   }
   .panel-body {
-    max-width: 50%;
+    max-width: 80%;
     margin: 0 auto;
 }
     form#myForm {
-    text-align: right;
+    text-align: center;
 }
 select {
     width: 100%;
+}
+tr.odd.gradeX {
+    height: 50px;
 }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -502,7 +506,7 @@ select {
 </html>
 <script>
     function calculate_attendance() { 
-       
+        window.alert("Test");
         var inputElements = document.getElementsByClassName('messageCheckbox');
         var Mobileno = document.getElementById("mob_number").value;
         var date = document.getElementById("date").value;
