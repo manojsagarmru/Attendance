@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+    td {
+      text-align: center;
+      max-width: 100%;
+      font-size: larger;
+  }
+  .panel-body {
+    max-width: 80%;
+    margin: 0 auto;
+}
+    form#myForm {
+    text-align: center;
+}
+select {
+    width: 100%;
+    height: 34px;
+    font-size: larger;
+}
+input#date {
+    width: 50%;
+    height: 34px;
+    font-size: larger;
+}
+
+tr.odd.gradeX {
+    height: 50px;
+}
+input.messageCheckbox {
+    width: 25px;
+    height: 25px;
+}
+input#f_btn1 {
+    width: 50%;
+    height: 50px;
+}
+th {
+    padding: 20px;
+}
+.heading {
+    text-align: center;
+    color: crimson;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="panel-body">
+<div class="heading"><h1>Omega Attendance</h1></div>
+    <form method="post" name="google-sheet" id="myForm">
+    <table id="data-table" class="table table-striped table-bordered nowrap" width="100%">
+        <thead>
+            <tr>
+                <td>Mobile Number:<br><select id="mob_number" name="mob_number">
+                        <option value="9597553794">Select Name</option>
+                        <option value="8099388998">Apparao</option>
+                        <option value="9677316916">Ashok</option>
+                        <option value="9943052222">Jim Reeves</option>
+                        <option value="9597553794">Manoj Sagar</option>
+                        <option value="9160074044">Ramya</option>
+                        
+                      </select></td>
+                <td>Date:<br><input type="date" id="date" name="date"></td>
+                <td>Session:<br><select id="session" name="session">
+                        <option>Select Session</option>
+                        <option value="FN">FN</option>
+                        <option value="AN">AN</option>
+                      </select></td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                 <td>Hour:<br><select id="hour" name="hour">
+                        <option>Select Hour</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                         <option value="III">III</option>
+                         <option value="IV">IV</option>
+                         <option value="V">V</option>
+                      </select></td>
+            </tr>
+                
+            <tr>
+             
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Absents</th>
+            </tr>
+        </thead>
+        <tbody>
+ <tr class="odd gradeX">
+    <td>KARLAPALEM KAVYA SREE</td>
+    <td>234</td>
+    <td><input class="messageCheckbox" type="checkbox" name="234" value="234"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KARRI RAMYA</td>
+    <td>235</td>
+    <td><input class="messageCheckbox" type="checkbox" name="235" value="235"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KARRI SAI SRI VENKATA REDDY</td>
+    <td>236</td>
+    <td><input class="messageCheckbox" type="checkbox" name="236" value="236"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KASARLA ESHA</td>
+    <td>237</td>
+    <td><input class="messageCheckbox" type="checkbox" name="237" value="237"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KASRA JOSEPH SAMPATH REDDY</td>
+    <td>238</td>
+    <td><input class="messageCheckbox" type="checkbox" name="238" value="238"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KASTHURI VARSHITH REDDY</td>
+    <td>239</td>
+    <td><input class="messageCheckbox" type="checkbox" name="239" value="239"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KASULA NIHARIKA</td>
+    <td>240</td>
+    <td><input class="messageCheckbox" type="checkbox" name="240" value="240"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KATAKAM EDIGA DHANUSHA</td>
+    <td>241</td>
+    <td><input class="messageCheckbox" type="checkbox" name="241" value="241"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KATUKOJWALA SHARATH CHANDRA</td>
+    <td>246</td>
+    <td><input class="messageCheckbox" type="checkbox" name="246" value="246"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KEMIDI SOWMYA</td>
+    <td>247</td>
+    <td><input class="messageCheckbox" type="checkbox" name="247" value="247"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KETHAVATH JAI VIVEK</td>
+    <td>248</td>
+    <td><input class="messageCheckbox" type="checkbox" name="248" value="248"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KETHAVATH SAITEJA</td>
+    <td>249</td>
+    <td><input class="messageCheckbox" type="checkbox" name="249" value="249"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KICHANNAGARI SUKANYA</td>
+    <td>250</td>
+    <td><input class="messageCheckbox" type="checkbox" name="250" value="250"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KILARI SAMHITHA</td>
+    <td>251</td>
+    <td><input class="messageCheckbox" type="checkbox" name="251" value="251"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KODALI THRILOKYA</td>
+    <td>253</td>
+    <td><input class="messageCheckbox" type="checkbox" name="253" value="253"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KOLIPAKA NAGA MARUTHI SANTHOSH NIKHIL</td>
+    <td>254</td>
+    <td><input class="messageCheckbox" type="checkbox" name="254" value="254"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KOMARAGIRI NIHARIKA</td>
+    <td>255</td>
+    <td><input class="messageCheckbox" type="checkbox" name="255" value="255"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KOMATI JASWANTH KRISHNA</td>
+    <td>256</td>
+    <td><input class="messageCheckbox" type="checkbox" name="256" value="256"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KONDERU SATHWIK KRISHNA</td>
+    <td>261</td>
+    <td><input class="messageCheckbox" type="checkbox" name="261" value="261"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KONGARA YASHWANTH REDDY</td>
+    <td>262</td>
+    <td><input class="messageCheckbox" type="checkbox" name="262" value="262"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KONURU ROHITH</td>
+    <td>263</td>
+    <td><input class="messageCheckbox" type="checkbox" name="263" value="263"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KOTHA TEJA PRATHAP</td>
+    <td>266</td>
+    <td><input class="messageCheckbox" type="checkbox" name="266" value="266"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KOTHARI LAKSHMI SATHVIKA</td>
+    <td>267</td>
+    <td><input class="messageCheckbox" type="checkbox" name="267" value="267"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>KOTTHINTY SAMEEKSHA</td>
+    <td>269</td>
+    <td><input class="messageCheckbox" type="checkbox" name="269" value="269"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>MOHD ABDUL MUFEEZ</td>
+    <td>332</td>
+    <td><input class="messageCheckbox" type="checkbox" name="332" value="332"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>PACHIGOLLA NAVYA</td>
+    <td>392</td>
+    <td><input class="messageCheckbox" type="checkbox" name="392" value="392"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>PALLE JASHWANTH REDDY</td>
+    <td>396</td>
+    <td><input class="messageCheckbox" type="checkbox" name="396" value="396"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>PATNAM DHANUSH PAVAN</td>
+    <td>407</td>
+    <td><input class="messageCheckbox" type="checkbox" name="407" value="407"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>PRANAV SANTOSH RAO</td>
+    <td>420</td>
+    <td><input class="messageCheckbox" type="checkbox" name="420" value="420"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>PUNATI BHUVANESH CHOWDARY</td>
+    <td>425</td>
+    <td><input class="messageCheckbox" type="checkbox" name="425" value="425"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>REGATTE SUSHANTH REDDY</td>
+    <td>440</td>
+    <td><input class="messageCheckbox" type="checkbox" name="440" value="440"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>RHEA CHRIS PRAMILA CHASE</td>
+    <td>443</td>
+    <td><input class="messageCheckbox" type="checkbox" name="443" value="443"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SANDRA SATHEESAN</td>
+    <td>456</td>
+    <td><input class="messageCheckbox" type="checkbox" name="456" value="456"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SANGRAMJEET GHOSH</td>
+    <td>457</td>
+    <td><input class="messageCheckbox" type="checkbox" name="457" value="457"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>CHARAN</td>
+    <td>461</td>
+    <td><input class="messageCheckbox" type="checkbox" name="461" value="461"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SHAIK RASHAAD</td>
+    <td>467</td>
+    <td><input class="messageCheckbox" type="checkbox" name="467" value="467"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SAAIMAH SIRAJ</td>
+    <td>468</td>
+    <td><input class="messageCheckbox" type="checkbox" name="468" value="468"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SHAIK FAREED BABA</td>
+    <td>469</td>
+    <td><input class="messageCheckbox" type="checkbox" name="469" value="469"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SHAIK MEHNAAZ</td>
+    <td>470</td>
+    <td><input class="messageCheckbox" type="checkbox" name="470" value="470"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SHAIK ROSHAN ZAMEER</td>
+    <td>471</td>
+    <td><input class="messageCheckbox" type="checkbox" name="471" value="471"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SHIBANI BEHERA</td>
+    <td>475</td>
+    <td><input class="messageCheckbox" type="checkbox" name="475" value="475"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SHIVA LINGARI VIPUL GOUD</td>
+    <td>476</td>
+    <td><input class="messageCheckbox" type="checkbox" name="476" value="476"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SK AASIM ROSHAN</td>
+    <td>481</td>
+    <td><input class="messageCheckbox" type="checkbox" name="481" value="481"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SOMAVARAMPETA RAGHURAM</td>
+    <td>482</td>
+    <td><input class="messageCheckbox" type="checkbox" name="482" value="482"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SONAM MOURYA</td>
+    <td>483</td>
+    <td><input class="messageCheckbox" type="checkbox" name="483" value="483"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>SUREDDY VENKATA HANUMA SRIDHAR REDDY</td>
+    <td>490</td>
+    <td><input class="messageCheckbox" type="checkbox" name="490" value="490"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>TADUVAI VEDANANDANA</td>
+    <td>497</td>
+    <td><input class="messageCheckbox" type="checkbox" name="497" value="497"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>TRISHA KOLLABATTULA</td>
+    <td>512</td>
+    <td><input class="messageCheckbox" type="checkbox" name="512" value="512"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>UMMAREDDY PRANAY</td>
+    <td>513</td>
+    <td><input class="messageCheckbox" type="checkbox" name="513" value="513"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>VEMPALA TEJASWI MAHADEV</td>
+    <td>531</td>
+    <td><input class="messageCheckbox" type="checkbox" name="531" value="531"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>VIBEK KUMAR RANA</td>
+    <td>535</td>
+    <td><input class="messageCheckbox" type="checkbox" name="535" value="535"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>VISHAKHA PANDOLE</td>
+    <td>538</td>
+    <td><input class="messageCheckbox" type="checkbox" name="538" value="538"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>VUSHAGONI ROHITH</td>
+    <td>540</td>
+    <td><input class="messageCheckbox" type="checkbox" name="540" value="540"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>RAJANALA SIRI BHARATHI</td>
+    <td>568</td>
+    <td><input class="messageCheckbox" type="checkbox" name="568" value="568"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>GALI SIVA SWETHA RANI</td>
+    <td>599</td>
+    <td><input class="messageCheckbox" type="checkbox" name="599" value="599"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>PODISETTY YOSHITHA</td>
+    <td>607</td>
+    <td><input class="messageCheckbox" type="checkbox" name="607" value="607"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>MUDAVATH DEVI PRASAD</td>
+    <td>618</td>
+    <td><input class="messageCheckbox" type="checkbox" name="618" value="618"/></td>
+</tr>
+<tr class="odd gradeX">
+    <td>B SAI HARSHA VARDHAN REDDY</td>
+    <td>623</td>
+    <td><input class="messageCheckbox" type="checkbox" name="623" value="623"/></td>
+</tr>
+
+
+                        
+                        
+
+        </tbody>
+    </table>
+    <input type="submit" name="submit" id="f_btn1" onclick="calculate_attendance()">
+    </form>
+</div>
+</html>
+<script>
+    function calculate_attendance() { 
+        var inputElements = document.getElementsByClassName('messageCheckbox');
+        var Mobileno = document.getElementById("mob_number").value;
+        var date = document.getElementById("date").value;
+       
+        var session = document.getElementById("session").value;
+        var hour = document.getElementById("hour").value;
+        // window.alert(Mobileno + date + session);
+        // console.log(inputElements[3]);
+        checkedValue ="";
+        count = 0;
+    for(var i=0; inputElements[i]; ++i){
+      if(inputElements[i].checked){
+           checkedValue = checkedValue.concat(inputElements[i].value.toString(),",");
+           count ++;
+            
+      }
+    }
+    present = 58-count;
+    checkedValue = checkedValue.slice(0,-1)
+   window.location.replace("https://api.whatsapp.com/send?phone=+91"+Mobileno+"&text=Class Room: 2-106%0aDate: "+date+"%0aSession: "+session+"%0aHour: "+hour+"%0aSection: Omega%0aAbsentees No: "+checkedValue+"%0aAbsent: "+count+"%0aPresent: "+present+"%0aTotal: "+present+"/58")
+
+    window.alert("https://api.whatsapp.com/send?phone=+91"+Mobileno+"&text=Class Room: 2-106%0aDate: "+date+"%0aSession: "+session+"%0aHour: "+hour+"%0aSection: Omega%0aAbsentees No: "+checkedValue+"%0aAbsent: "+count+"%0aPresent: "+present+"%0aTotal: "+present+"/58");
+};
+
+</script>
